@@ -17,7 +17,8 @@ def reformat_languages(languages)
   end 
   languages.each do |style, language| 
     language.each do |language, type| 
-      if (languages_in_order[language][:style]).include?(style) === false(languages_in_order[language][:style]).push(style)
+      if (languages_in_order[language][:style]).include?(style) === false
+        (languages_in_order[language][:style]).push(style)
       end 
     end 
   end 
